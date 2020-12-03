@@ -74,4 +74,6 @@ lbl.grid(column=0, row=6)
 lbl = Label(window, text='{0:,}'.format(round(min_year,2)))
 lbl.grid(column=1, row=6)
 
+#hola
+
 window.mainloop()
