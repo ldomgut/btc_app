@@ -27,7 +27,7 @@ window.config(menu=menu)
 # funciones
 def calculate():
     lbl = Label(window, text='{0:,}'.format(round(float(precio_btc)*float(txt.get()),2)),width=20)
-    lbl.grid(column=1, row=2)
+    lbl.grid(column=3, row=6)
 def show_price_chart():
     sns.lineplot(x="time", y="price",
                  data=df)
