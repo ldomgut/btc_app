@@ -15,7 +15,7 @@ capitalization = df.market_cap.iloc[df.shape[0]-1]
 
 # Iniciando gui
 window = Tk()
-window.geometry('300x300')
+window.geometry('350x250')
 window.title("Bitcoin")
 window.config()
 
@@ -26,8 +26,8 @@ window.config(menu=menu)
 
 # funciones
 def calculate():
-    lbl = Label(window, text='{0:,}'.format(round(float(precio_btc)*float(txt.get()),2)),width=20)
-    lbl.grid(column=1, row=1)
+    lbl = Label(window, text='{0:,}'.format(round(float(precio_btc)*float(txt.get()),2)), width=20, fg = "red")
+    lbl.grid(column=4, row=1)
 def show_price_chart():
     sns.lineplot(x="time", y="price",
                  data=df)
