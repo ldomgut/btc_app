@@ -1,10 +1,9 @@
 import funciones
-import pandas as pd
 from tkinter import *
 from datetime import datetime
 import seaborn as sns
 import matplotlib.pyplot as plt
-import plotly.graph_objects as go
+import pandas as pd
 
 df = funciones.get_btc_historical_data()
 max_price = max(df.price)
